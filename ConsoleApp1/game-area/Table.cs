@@ -8,7 +8,5 @@ namespace StudyingTesting.poker_hands.game_area
 {
     public class Table
     {
-
     }
-
 }

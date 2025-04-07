@@ -28,18 +28,17 @@ namespace StudyingTesting.poker_hands
             Hand hand = new Hand();
             hand.Cards = cards;
 
-            foreach(Card c in hand.Cards)
+            foreach (Card c in hand.Cards)
             {
                 Console.WriteLine(c);
             }
+
             hand.Sort();
             Console.WriteLine("After sorting:");
             foreach (Card c in hand.Cards)
             {
                 Console.WriteLine(c);
             }
-
         }
-
     }
 }
