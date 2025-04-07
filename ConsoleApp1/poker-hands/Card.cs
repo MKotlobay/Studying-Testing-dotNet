@@ -17,9 +17,17 @@ namespace StudyingTesting.poker_hands
             this.suit = suit;
         }
 
-        public int Number { get => number; set => number = value; }
+        public int Number
+        {
+            get => number;
+            set => number = value;
+        }
 
-        public Suit Suit { get => suit; set => suit = value; }
+        public Suit Suit
+        {
+            get => suit;
+            set => suit = value;
+        }
 
         public override string ToString()
         {
@@ -30,7 +38,5 @@ namespace StudyingTesting.poker_hands
         {
             return number.CompareTo(other.number);
         }
-
-
     }
 }

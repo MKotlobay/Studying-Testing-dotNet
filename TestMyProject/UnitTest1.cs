@@ -9,7 +9,6 @@ namespace TestMyProject
         [TestMethod]
         public void TestMethod1()
         {
-
             int Expected = 7;
             Card c = new Card(Expected, Suit.SPADES);
 
@@ -20,7 +19,6 @@ namespace TestMyProject
         [TestMethod]
         public void TestHandSorting()
         {
-
             Card card = new Card(5, Suit.DIAMONDS);
 
             Console.WriteLine("card=" + card);
@@ -42,11 +40,11 @@ namespace TestMyProject
             int num = 0;
             for (int i = 0; i < cards.Length; i++)
             {
-                Assert.IsTrue(num <= cards[i].Number, $"Expected {cards[i].Number} to be greater than {num}, but it was not. lingar");
+                Assert.IsTrue(num <= cards[i].Number,
+                    $"Expected {cards[i].Number} to be greater than {num}, but it was not. lingar");
 
                 num = cards[i].Number;
             }
-
         }
 
         [TestMethod]
@@ -69,11 +67,7 @@ namespace TestMyProject
                 Assert.AreEqual(cards[i].Number, h.Cards[i].Number);
 
                 Assert.AreEqual(cards[i].Suit, h.Cards[i].Suit);
-
             }
-
-
         }
     }
-
 }

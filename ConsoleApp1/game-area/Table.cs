@@ -4,13 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace StudyingTesting.poker_hands
+namespace StudyingTesting.poker_hands.game_area
 {
-    public enum Suit
+    public class Table
     {
-        CLUBS,
-        DIAMONDS,
-        HEARTS,
-        SPADES
     }
 }

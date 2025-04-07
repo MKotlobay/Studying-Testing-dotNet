@@ -4,13 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace StudyingTesting.poker_hands
+namespace StudyingTesting.users
 {
-    public enum Suit
+    public enum User_Role
     {
-        CLUBS,
-        DIAMONDS,
-        HEARTS,
-        SPADES
+        ADMIN,
+        MANAGER,
+        PLAYER
     }
 }
